@@ -31,7 +31,7 @@ export default function MobileMenu({ open, onClose }: Props) {
       <Overlay show={open} onClick={onClose} />
 
       <section
-        className={`fixed flex flex-col top-0 right-41 h-[274px] w-[240px] p-5 gap-6 rounded-2xl bg-white  z-50 transform transition-transform duration-300 ${open ? "translate-y-0" : "-translate-y-full"}`}
+        className={`fixed flex flex-col top-0 right-0 lg:right-41 h-[274px] w-[240px] p-5 gap-6 rounded-2xl bg-white  z-50 transform transition-transform duration-300 ${open ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div className="flex flex-row h-[64px] w-full gap-2 items-center">
           <img src={user.avatar} alt={user.name} className="size-12" />
